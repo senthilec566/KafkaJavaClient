@@ -15,8 +15,8 @@ public class KafkaProducer {
         Random rnd = new Random();
  
         Properties props = new Properties();
-        props.put("metadata.broker.list", "10.103.178.124:9092,10.103.178.141:9092,10.103.178.142:9092,10.103.178.143:9092,10.103.178.144:9092,10.103.178.145:9092,10.103.178.146:9092, 10.103.178.147:9092");
-        props.put("bootstrap.servers", "10.103.178.124:9092,10.103.178.141:9092,10.103.178.142:9092,10.103.178.143:9092,10.103.178.144:9092,10.103.178.145:9092,10.103.178.146:9092, 10.103.178.147:9092");
+        props.put("metadata.broker.list", "");
+        props.put("bootstrap.servers", "");
         props.put("serializer.class", "kafka.serializer.StringEncoder");
         props.put("request.required.acks", "1"); 
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
